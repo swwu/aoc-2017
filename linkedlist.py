@@ -14,8 +14,8 @@ class LL(object):
     count = 0
 
     def __init__(self, arr):
+        self.count = len(arr)
         self.head = Node(arr[0])
-        self.count = 1
 
         cur = self.head
 
@@ -25,7 +25,6 @@ class LL(object):
             nxt = Node(item)
             cur.n = nxt
             nxt.p = cur
-            self.count += 1
 
             cur = nxt
 
