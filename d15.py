@@ -12,14 +12,12 @@ bstart = 325
 
 right16 = 65536
 
-
-
 av = astart
 bv = bstart
 
 score = 0
 
-for i in range(5000000):
+for i in xrange(5000000):
 
     if i % 10000 == 0:
         print(i)
